@@ -1,5 +1,11 @@
 {
   "devDependencies": {
-    "chai": "^3.5.0"
+    "chai": "^3.5.0",
+    "nock": "^7.2.2",
+    "request": "^2.69.0",
+    "sinon": "^1.17.3"
+  },
+  "scripts": {
+    "test": "mocha tests --recursive"
   }
 }
