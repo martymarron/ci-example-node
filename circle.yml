@@ -1,2 +1,3 @@
 test:
-  override: mocha tests --watch
+  override:
+    - mocha tests --watch
