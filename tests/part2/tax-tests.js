@@ -22,7 +22,8 @@ describe('tax', function() {
       .post('/request')
       .reply(200, function(uri, requestBody) {
         return {
-          amount: JSON.parse(requestBody).subtotal * 0.10
+          //amount: JSON.parse(requestBody).subtotal * 0.10
+          amount: requestBody.subtotal * 0.10
         };
       });
 
