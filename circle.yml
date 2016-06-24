@@ -1,4 +1,6 @@
 test:
+  override:
+    - exit 1
   post:
     - cp -r coverage $CIRCLE_ARTIFACTS
     - echo $CI
