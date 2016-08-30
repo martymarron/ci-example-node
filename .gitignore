@@ -1,4 +1,4 @@
 node_modules/*
 *.log
 coverage/*
-xunit.xml
+test-results.xml
