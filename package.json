@@ -1,0 +1,17 @@
+{
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/martymarron/ci-example-node.git"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "istanbul": "^0.4.2",
+    "mocha-junit-reporter": "^1.12.0",
+    "nock": "^7.2.2",
+    "request": "^2.69.0",
+    "sinon": "^1.17.3"
+  },
+  "scripts": {
+    "test": "istanbul cover _mocha -- tests --recursive --reporter mocha-junit-reporter"
+  }
+}
