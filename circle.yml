@@ -1,5 +1,7 @@
-test:
+machine:
   environment:
-          XUNIT_FILE: $CIRCLE_TEST_REPORTS/junit/test-results.xml
+    XUNIT_FILE: $CIRCLE_TEST_REPORTS/junit/test-results.xml
+
+test:
   post:
     - cp -r coverage $CIRCLE_ARTIFACTS
