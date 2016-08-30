@@ -1,6 +1,6 @@
 machine:
   environment:
-    XUNIT_FILE: $CIRCLE_TEST_REPORTS/junit/test-results.xml
+    MOCHA_FILE: $CIRCLE_TEST_REPORTS/junit/test-results.xml
 
 test:
   post:
