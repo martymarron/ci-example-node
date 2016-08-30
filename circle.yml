@@ -1,7 +1,7 @@
+machine:
+ environment:
+    MOCHA_FILE: $CIRCLE_TEST_REPORTS/junit/test-results.xml
+
 test:
-  override:
-    - mocha test --reporter mocha-junit-reporter:
-        environment:
-          MOCHA_FILE: $CIRCLE_TEST_REPORTS/junit/test-results.xml
   post:
     - cp -r coverage $CIRCLE_ARTIFACTS
