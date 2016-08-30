@@ -1,6 +1,7 @@
 test:
   override:
-    - exit 1
+    - mocha test --reporter mocha-junit-reporter:
+        environment:
+          MOCHA_FILE: $CIRCLE_TEST_REPORTS/junit/test-results.xml
   post:
     - cp -r coverage $CIRCLE_ARTIFACTS
-    - echo $CI
