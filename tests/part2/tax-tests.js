@@ -28,7 +28,7 @@ describe('tax', function() {
       });
 
     tax.calculate(100, 'CA', function(taxDetails) {
-      expect(taxDetails).to.eql({ amount: 9 });
+      expect(taxDetails).to.eql({ amount: 10 });
       done();
     });
   });
